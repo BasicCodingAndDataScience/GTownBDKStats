@@ -3,15 +3,32 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
+#moneychart1{
+  height: 100%;
+  width: 100%;
+}
+#chartContainer8{
+  width: 42%;
+  height: 100%;
+    display: inline-block;
+    margin-left: 50px;
+}
 #growthchart1 {
   width: 100%;
   height: 100%;
 }
-
+#growthchart2{
+  width: 100%;
+  height: 100%;
+}
+#growthchart3{
+  width: 100%;
+  height: 100%;
+}
 p {
   font-family: "Open Sans";
   margin-left: 50px;
+  margin-top: -8px;
 }
 
 h1 {
@@ -23,10 +40,12 @@ h1 {
 h2 {
   text-align: left;
   font-family: "Open Sans";
-  margin-left: 100px;
+  margin-left: 120px;
   font-size: 25px. font-weight: bolder;
 }
-
+#growthhead{
+  margin-top: 20px;
+}
 h4 {
   text-align: left;
   margin-left: 100px;
@@ -70,17 +89,26 @@ pre {
   width: 42%;
   display: inline-block;
 }
+#chartContainer7{
+width: 42%;
+height: 100%;
+  display: inline-block;
+  margin-left: 50px;
+}
+#moneychart2{
+  height: 100%;
+  width: 100%;
+}
 #introPara {
   width: 90%;
   display: inline-block;
 }
-
-#chartContainer3 {
-  width: 40%;
+#chartContainer6{
+  width: 60%;
+height: 100%;
   display: inline-block;
-  padding: 10px;
+  margin-left: 250px;
 }
-
 #chartContainer4{
   width: 40%;
   display: inline-block;
@@ -90,8 +118,9 @@ pre {
 height: 100%;
   display: inline-block;
   margin-left: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
-
 #agechart1 {
   width: 100%;
   height: 100%;

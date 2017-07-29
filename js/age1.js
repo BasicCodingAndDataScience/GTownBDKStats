@@ -283,9 +283,10 @@ var growth1 = {
       "stacked": true
     },
     "title": {
-      "text": "Vieweshiper of Championship over Six Years",
+      "text": "Viewership of Championship over Six Years",
       "font-size": "18px",
       "font-color": "black",
+       "fontFamily": "Open Sans",
     },
     "scale-x": {
       "item": {
@@ -327,4 +328,108 @@ zingchart.render({
   data: growth1,
   height: "100%",
   width: "100%"
+});
+
+var growth2 = {
+    "background-color": "#E1EAEC #ECF2F4",
+  "type":"area",
+  "series":[{"values":[1690000,8200000,32000000,27000000,36000000,43000000]} ], "scale-y": {
+      "thousands-separator": ",",
+      "short": "true"
+          },
+    "scale-x": {
+     "values":"2011:2016:1"
+    },
+      "title": {
+      "text": "League of Legends Viewership",
+      "font-size": "18px",
+      "font-color": "black",
+       "fontFamily": "Open Sans",
+    }
+}
+zingchart.render({
+	id : 'growthchart2',
+	data : growth2,
+	height: "100%",
+	width: "100%"
+});
+
+var growth3 = {
+  "type": "line",
+    "background-color": "#E1EAEC #ECF2F4",
+                "plot":{"aspect":"spline",},
+                "series": [
+       {"values":[385,290,-16,33,19],
+        "text":"League of Legends"
+       },
+                  {"values":[0,0,2,1,-1],
+                  "text":"Super Bowl"},],
+               "scale-x": {
+     "values":"2012:2016:1"
+    },
+      "legend":{
+
+  },
+         "scale-y": {
+           "format":"%v%",
+            "values":"-100:400:50",
+      "thousands-separator": ",",
+    },
+      "title": {
+      "text": "Percent Growth Over Time",
+      "font-size": "18px",
+      "font-color": "black",
+       "fontFamily": "Open Sans",
+    }
+               };
+
+zingchart.render({
+	id : 'growthchart3',
+	data : growth3,
+	height: "100%",
+	width: "100%"
+});
+
+var money1 = {"type":"bar",
+                "background-color": "#E1EAEC #ECF2F4","scale-y": {
+           "format":"$%v",
+            "short": "true",
+      "thousands-separator": ",",
+    },
+                "scale-x": {
+ "labels" : ["LoL", "Dota", "CS:GO", "NFL", "NBA", "MLB"]
+},
+      "title": {
+      "text": "Prize Money for Championship",
+      "font-size": "18px",
+      "font-color": "black",
+       "fontFamily": "Open Sans",
+    },
+                "series":[{"values":[1000000,5000000,1500000,5100000,4100000,512000]} ] };
+
+zingchart.render({
+	id : 'moneychart1',
+	data : money1,
+	height: "100%",
+	width: "100%"
+});
+
+var  money2 = {"type":"bar",
+    "background-color": "#E1EAEC #ECF2F4",
+"title": {
+  "text":"Total (Blue) and Concurrent (Red) Viewers"
+},
+"scale-y": {
+short: true, "thousands-separator": ","
+},
+"scale-x": {
+ "labels" : ["LoL", "Dota", "CS:GO", "NFL", "NBA", "UCL", "MLB"]
+},
+"series":[{"values":[43000000,20000000,8000000,112200000,15500000,380000000,75000000], "text":"test1"}, {"values":[14700000,4500000,1026236,3960000,11300000,180000000,40000000], "text": "test2"} ] };
+
+zingchart.render({
+	id : 'moneychart2',
+	data : money2,
+	height: "100%",
+	width: "100%"
 });
